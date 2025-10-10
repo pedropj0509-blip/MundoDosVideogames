@@ -1,107 +1,21 @@
+
 <!doctype html>
-
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+ 
   <title>Mundo dos Videogames</title>
+  <link rel="stylesheet" href="style.css" />
   <meta name="description" content="Aqui você vai conhecer a história dos videogames, personagens famosos e curiosidades do mundo gamer." />
-  <style>
-    :root{
-      --bg1:#0b0020;
-      --bg2:#2a0066;
-      --neon:#6ef;
-      --accent:#7b2cff;
-      --glass: rgba(255,255,255,0.06);
-      --text: #f4f7fb;
-      --muted: rgba(244,247,251,0.7);
-      --card-radius:14px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  color:var(--text);
-  background:linear-gradient(180deg,var(--bg1) 0%, var(--bg2) 60%);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  overflow-x:hidden;
-}
-
-/* Container */
-.container{max-width:1200px;margin:0 auto;padding:28px}
-
-header{
-  display:flex;align-items:center;justify-content:space-between;padding:10px 0;
-}
-
-.logo{display:flex;align-items:center;gap:14px}
-.logo .badge{
-  width:58px;height:58px;border-radius:12px;background:linear-gradient(135deg,#3ad7ff,#7b2cff);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,0.45) inset, 0 6px 28px rgba(123,44,255,0.18);
-  flex-shrink:0
-}
-.logo .badge svg{width:34px;height:34px;filter:drop-shadow(0 6px 18px rgba(123,44,255,0.18));}
-.logo h1{font-size:20px;margin:0;line-height:1;font-weight:700;letter-spacing:0.5px}
-
-nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
-nav a{color:var(--muted);text-decoration:none;font-weight:600}
-nav a:hover{color:var(--text);text-shadow:0 6px 18px rgba(107,47,255,0.25)}
-
-/* Hero */
-.hero{display:grid;grid-template-columns:1fr 520px;gap:36px;align-items:center;padding:48px 0}
-
-.hero-left{padding:12px}
-.kicker{display:inline-block;border-left:3px solid var(--neon);padding-left:12px;color:var(--muted);margin-bottom:18px}
-.hero-title{font-size:64px;line-height:0.95;margin:0 0 18px;font-weight:800}
-.hero-sub{color:var(--muted);font-size:18px;margin-bottom:28px}
-
-.cta{display:inline-flex;align-items:center;gap:12px;background:transparent;border:2px solid rgba(110,200,255,0.12);padding:12px 20px;border-radius:12px;color:var(--text);font-weight:700;backdrop-filter:blur(6px);box-shadow:0 6px 30px rgba(0,0,0,0.45)}
-.cta:hover{transform:translateY(-3px)}
-.cta .pill{background:linear-gradient(90deg,var(--neon),var(--accent));padding:6px 10px;border-radius:8px;font-size:14px}
-
-/* hero-right visuals */
-.hero-right{position:relative;display:flex;align-items:center;justify-content:center}
-.hero-visual{width:100%;height:420px;border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.12));display:block;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.6)}
-.hero-visual img{width:100%;height:100%;object-fit:cover;display:block}
-
-/* slider thumbs */
-.thumbs{display:flex;gap:8px;position:absolute;left:12px;bottom:12px}
-.thumb{width:64px;height:40px;border-radius:8px;overflow:hidden;border:2px solid rgba(255,255,255,0.04);cursor:pointer}
-.thumb img{width:100%;height:100%;object-fit:cover}
-
-/* Features */
-.features{display:flex;gap:18px;margin-top:28px}
-.card{background:var(--glass);padding:16px;border-radius:12px;flex:1;min-height:88px}
-.card h3{margin:0 0 8px}
-
-footer{margin-top:40px;padding:22px 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
-
-/* Responsive */
-@media (max-width:980px){
-  .hero{grid-template-columns:1fr;}
-  .hero-right{order:-1;margin-bottom:18px}
-  .hero-title{font-size:42px}
-  .hero-visual{height:360px}
-}
-@media (max-width:520px){
-  .container{padding:16px}
-  nav ul{display:none}
-  .hero-title{font-size:34px}
-  .hero-visual{height:240px}
-}
-
-/* Neon decorative line bottom */
-.neon-line{height:3px;background:linear-gradient(90deg, transparent, rgba(110,200,255,0.18), transparent);border-radius:3px;margin-top:20px}
-
-  </style>
 </head>
 <body>
   <div class="container">
     <header>
       <div class="logo">
         <div class="badge" aria-hidden="true">
-          <!-- simple controller icon -->
-          <svg viewBox="0 0 24 24" fill="none" xmlns="" aria-hidden="true">
+          <img src="C:\Users\Seduc\Downloads\LogoMundoVideogame.jpeg" alt="" width="60" height="60"> 
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w.org/2000/svg" aria-hidden="true">
             <rect x="2" y="6" width="20" height="12" rx="3" fill="white" opacity="0.06"/>
             <circle cx="8" cy="12" r="1.6" fill="white"/>
             <rect x="15.1" y="10.2" width="1.2" height="1.2" rx="0.2" fill="white"/>
@@ -110,352 +24,88 @@ footer{margin-top:40px;padding:22px 0;color:var(--muted);display:flex;justify-co
         </div>
         <div>
           <h1>Mundo dos Videogames</h1>
-          <div style="font-size:12px;color:var(--muted);margin-top:4px">Home / Página Inicial</div>
-        </div>
-      </div><nav aria-label="menu principal">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#historia">História</a></li>
-      <li><a href="#personagens">Personagens</a></li>
-      <li><a href="#curiosidades">Curiosidades</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="hero-left">
-      <div class="kicker">Bem-vindo ao universo gamer</div>
-      <h2 class="hero-title">Explore o universo<br/>dos games</h2>
-      <p class="hero-sub">— do passado nostálgico aos mundos mais épicos da atualidade!</p>
-
-      <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
-        <a href="#historia" class="cta" id="cta-start">
-          <span class="pill">Começar</span>
-          <span>Começar a Jornada 🎮</span>
-        </a>
-
-        <div style="color:var(--muted);font-size:14px">Quer saber mais? Role a página ↓</div>
-      </div>
-
-      <div class="features" aria-hidden="true">
-        <div class="card">
-          <h3>História</h3>
-          <p style="margin:0;color:var(--muted);font-size:14px">Da era dos arcades aos consoles modernos — resumos e curiosidades.</p>
-        </div>
-        <div class="card">
-          <h3>Personagens</h3>
-          <p style="margin:0;color:var(--muted);font-size:14px">Perfis de figuras icônicas como Mario, Sonic, Lara Croft e Kratos.</p>
-        </div>
-        <div class="card">
-          <h3>Curiosidades</h3>
-          <p style="margin:0;color:var(--muted);font-size:14px">Easter eggs, falhas famosas e fatos que vão te surpreender.</p>
+          <div class="breadcrumb">Home / Página Inicial</div>
         </div>
       </div>
-    </div>
 
-    <div class="hero-right">
-      <div class="hero-visual" id="heroVisual">
-        <!-- Substitua src pelo caminho da imagem que você gerou (ex: ./assets/hero.jpg) -->
-        <img src="assets/hero.jpg" alt="Imagem de destaque com consoles e personagens clássicos" id="heroImage"/>
+      <nav aria-label="menu principal">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#personagens">Personagens</a></li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <div class="thumbs" id="thumbs" aria-hidden="true">
-          <div class="thumb" data-src="assets/hero.jpg"><img src="assets/thumb1.jpg" alt="thumb 1"></div>
-          <div class="thumb" data-src="assets/hero2.jpg"><img src="assets/thumb2.jpg" alt="thumb 2"></div>
-          <div class="thumb" data-src="assets/hero3.jpg"><img src="assets/thumb3.jpg" alt="thumb 3"></div>
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <div class="kicker">Bem-vindo ao universo gamer</div>
+          <h2 class="hero-title">Explore o universo<br/>dos games</h2>
+          <p class="hero-sub">— do passado nostálgico aos mundos mais épicos da atualidade!</p>
+
+          <div class="hero-actions">
+            <a href="#historia" class="cta">
+              <span class="pill">Começar</span>
+              <span>Começar a Jornada 🎮</span>
+            </a>
+            <p class="hint">Quer saber mais? Role a página ↓</p>
+          </div>
+
+          <div class="features">
+            <div class="card">
+              <h3>História</h3>
+              <p>Da era dos arcades aos consoles modernos — resumos e curiosidades.</p>
+            </div>
+            <div class="card">
+              <h3>Personagens</h3>
+              <p>Perfis de figuras icônicas como Mario, Sonic, Lara Croft e Kratos.</p>
+            </div>
+            <div class="card">
+              <h3>Curiosidades</h3>
+              <p>Easter eggs, falhas famosas e fatos que vão te surpreender.</p>
+            </div>
+          </div>
         </div>
+
+        <div class="hero-right">
+          <div class="hero-visual">
+            <img src="assets/hero.jpg" alt="Imagem de destaque com consoles e personagens clássicos" id="heroImage"/>
+            <div class="thumbs" id="thumbs">
+              <div class="thumb" data-src="assets/hero.jpg"><img src="assets/thumb1.jpg" alt="thumb 1"></div>
+              <div class="thumb" data-src="assets/hero2.jpg"><img src="assets/thumb2.jpg" alt="thumb 2"></div>
+              <div class="thumb" data-src="assets/hero3.jpg"><img src="assets/thumb3.jpg" alt="thumb 3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="neon-line"></div>
+
+      <section id="historia" class="content-section">
+        <article>
+          <h2>História dos Videogames</h2>
+          <p>Conheça os marcos: de Pong e o Atari aos consoles atuais e o impacto cultural dos jogos.</p>
+        </article>
+        <aside>
+          <h3>Personagem em destaque</h3>
+          <p>Perfil rápido, curiosidades e jogos principais.</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Mundo dos Videogames | Feito por fãs para fãs</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="YouTube">YT</a>
+        <a href="#" aria-label="TikTok">TT</a>
       </div>
-    </div>
-  </section>
-
-  <div class="neon-line" aria-hidden="true"></div>
-
-  <!-- Seções de conteúdo exemplo -->
-  <section id="historia" style="margin-top:34px">
-    <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap">
-      <article style="flex:1;min-width:260px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:18px;border-radius:12px">
-        <h2>História dos Videogames</h2>
-        <p style="color:var(--muted)">Conheça os marcos: de Pong e o Atari aos consoles atuais e o impacto cultural dos jogos.</p>
-      </article>
-
-      <aside style="width:320px;min-width:240px;background:var(--glass);padding:14px;border-radius:12px">
-        <h3 style="margin-top:0">Personagem em destaque</h3>
-        <p style="color:var(--muted)">Perfil rápido, curiosidades e jogos principais.</p>
-      </aside>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div>© 2025 Mundo dos Videogames | Feito por fãs para fãs</div>
-  <div style="display:flex;gap:12px;align-items:center">
-    <a href="#" aria-label="Instagram">IG</a>
-    <a href="#" aria-label="YouTube">YT</a>
-    <a href="#" aria-label="TikTok">TT</a>
+    </footer>
   </div>
-</footer>
 
-  </div>  <script>
-    // slider thumbs -> simple image swap
-    (function(){
-      const thumbs = document.querySelectorAll('.thumb');
-      const heroImage = document.getElementById('heroImage');
-
-      // Make the hero image clickable to open larger view
-      if(heroImage){
-        heroImage.style.cursor = 'pointer';
-        heroImage.addEventListener('click', ()=>{
-          window.open(heroImage.src, '_blank');
-        });
-      }
-
-      thumbs.forEach(t=>{
-        t.addEventListener('click', ()=>{
-          const src = t.getAttribute('data-src');
-          if(src) heroImage.src = src;
-        });
-      });
-
-      // Small progressive enhancement: if thumbs images missing, hide the row
-      const thumbsRow = document.getElementById('thumbs');
-      if(thumbsRow && thumbsRow.querySelectorAll('.thumb').length===0) thumbsRow.style.display='none';
-
-      // Smooth entry animation
-      window.addEventListener('load', ()=>{
-        document.querySelector('.hero-left').style.transform='translateY(0)';
-      });
-    })();
-  </script></body>
-</html><!doctype html>
-
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mundo dos Videogames</title>
-  <meta name="description" content="Aqui você vai conhecer a história dos videogames, personagens famosos e curiosidades do mundo gamer." />
-  <style>
-    :root{
-      --bg1:#0b0020;
-      --bg2:#2a0066;
-      --neon:#6ef;
-      --accent:#7b2cff;
-      --glass: rgba(255,255,255,0.06);
-      --text: #f4f7fb;
-      --muted: rgba(244,247,251,0.7);
-      --card-radius:14px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  color:var(--text);
-  background:linear-gradient(180deg,var(--bg1) 0%, var(--bg2) 60%);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  overflow-x:hidden;
-}
-
-/* Container */
-.container{max-width:1200px;margin:0 auto;padding:28px}
-
-header{
-  display:flex;align-items:center;justify-content:space-between;padding:10px 0;
-}
-
-.logo{display:flex;align-items:center;gap:14px}
-.logo .badge{
-  width:58px;height:58px;border-radius:12px;background:linear-gradient(135deg,#3ad7ff,#7b2cff);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,0.45) inset, 0 6px 28px rgba(123,44,255,0.18);
-  flex-shrink:0
-}
-.logo .badge svg{width:34px;height:34px;filter:drop-shadow(0 6px 18px rgba(123,44,255,0.18));}
-.logo h1{font-size:20px;margin:0;line-height:1;font-weight:700;letter-spacing:0.5px}
-
-nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
-nav a{color:var(--muted);text-decoration:none;font-weight:600}
-nav a:hover{color:var(--text);text-shadow:0 6px 18px rgba(107,47,255,0.25)}
-
-/* Hero */
-.hero{display:grid;grid-template-columns:1fr 520px;gap:36px;align-items:center;padding:48px 0}
-
-.hero-left{padding:12px}
-.kicker{display:inline-block;border-left:3px solid var(--neon);padding-left:12px;color:var(--muted);margin-bottom:18px}
-.hero-title{font-size:64px;line-height:0.95;margin:0 0 18px;font-weight:800}
-.hero-sub{color:var(--muted);font-size:18px;margin-bottom:28px}
-
-.cta{display:inline-flex;align-items:center;gap:12px;background:transparent;border:2px solid rgba(110,200,255,0.12);padding:12px 20px;border-radius:12px;color:var(--text);font-weight:700;backdrop-filter:blur(6px);box-shadow:0 6px 30px rgba(0,0,0,0.45)}
-.cta:hover{transform:translateY(-3px)}
-.cta .pill{background:linear-gradient(90deg,var(--neon),var(--accent));padding:6px 10px;border-radius:8px;font-size:14px}
-
-/* hero-right visuals */
-.hero-right{position:relative;display:flex;align-items:center;justify-content:center}
-.hero-visual{width:100%;height:420px;border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.12));display:block;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.6)}
-.hero-visual img{width:100%;height:100%;object-fit:cover;display:block}
-
-/* slider thumbs */
-.thumbs{display:flex;gap:8px;position:absolute;left:12px;bottom:12px}
-.thumb{width:64px;height:40px;border-radius:8px;overflow:hidden;border:2px solid rgba(255,255,255,0.04);cursor:pointer}
-.thumb img{width:100%;height:100%;object-fit:cover}
-
-/* Features */
-.features{display:flex;gap:18px;margin-top:28px}
-.card{background:var(--glass);padding:16px;border-radius:12px;flex:1;min-height:88px}
-.card h3{margin:0 0 8px}
-
-footer{margin-top:40px;padding:22px 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
-
-/* Responsive */
-@media (max-width:980px){
-  .hero{grid-template-columns:1fr;}
-  .hero-right{order:-1;margin-bottom:18px}
-  .hero-title{font-size:42px}
-  .hero-visual{height:360px}
-}
-@media (max-width:520px){
-  .container{padding:16px}
-  nav ul{display:none}
-  .hero-title{font-size:34px}
-  .hero-visual{height:240px}
-}
-
-/* Neon decorative line bottom */
-.neon-line{height:3px;background:linear-gradient(90deg, transparent, rgba(110,200,255,0.18), transparent);border-radius:3px;margin-top:20px}
-
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="logo">
-        <div class="badge" aria-hidden="true">
-          <!-- simple controller icon -->
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="2" y="6" width="20" height="12" rx="3" fill="white" opacity="0.06"/>
-            <circle cx="8" cy="12" r="1.6" fill="white"/>
-            <rect x="15.1" y="10.2" width="1.2" height="1.2" rx="0.2" fill="white"/>
-            <rect x="17.5" y="8.6" width="1.2" height="1.2" rx="0.2" fill="white"/>
-          </svg>
-        </div>
-        <div>
-          <h1>Mundo dos Videogames</h1>
-          <div style="font-size:12px;color:var(--muted);margin-top:4px">Home / Página Inicial</div>
-        </div>
-      </div><nav aria-label="menu principal">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#historia">História</a></li>
-      <li><a href="#personagens">Personagens</a></li>
-      <li><a href="#curiosidades">Curiosidades</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="hero-left">
-      <div class="kicker">Bem-vindo ao universo gamer</div>
-      <h2 class="hero-title">Explore o universo<br/>dos games</h2>
-      <p class="hero-sub">— do passado nostálgico aos mundos mais épicos da atualidade!</p>
-
-      <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
-        <a href="#historia" class="cta" id="cta-start">
-          <span class="pill">Começar</span>
-          <span>Começar a Jornada 🎮</span>
-        </a>
-
-        <div style="color:var(--muted);font-size:14px">Quer saber mais? Role a página ↓</div>
-      </div>
-
-      <div class="features" aria-hidden="true">
-        <div class="card">
-          <h3>História</h3>
-          <p style="margin:0;color:var(--muted);font-size:14px">Da era dos arcades aos consoles modernos — resumos e curiosidades.</p>
-        </div>
-        <div class="card">
-          <h3>Personagens</h3>
-          <p style="margin:0;color:var(--muted);font-size:14px">Perfis de figuras icônicas como Mario, Sonic, Lara Croft e Kratos.</p>
-        </div>
-        <div class="card">
-          <h3>Curiosidades</h3>
-          <p style="margin:0;color:var(--muted);font-size:14px">Easter eggs, falhas famosas e fatos que vão te surpreender.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-right">
-      <div class="hero-visual" id="heroVisual">
-        <!-- Substitua src pelo caminho da imagem que você gerou (ex: ./assets/hero.jpg) -->
-        <img src="assets/hero.jpg" alt="Imagem de destaque com consoles e personagens clássicos" id="heroImage"/>
-
-        <div class="thumbs" id="thumbs" aria-hidden="true">
-          <div class="thumb" data-src="assets/hero.jpg"><img src="assets/thumb1.jpg" alt="thumb 1"></div>
-          <div class="thumb" data-src="assets/hero2.jpg"><img src="assets/thumb2.jpg" alt="thumb 2"></div>
-          <div class="thumb" data-src="assets/hero3.jpg"><img src="assets/thumb3.jpg" alt="thumb 3"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="neon-line" aria-hidden="true"></div>
-
-  <!-- Seções de conteúdo exemplo -->
-  <section id="historia" style="margin-top:34px">
-    <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap">
-      <article style="flex:1;min-width:260px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:18px;border-radius:12px">
-        <h2>História dos Videogames</h2>
-        <p style="color:var(--muted)">Conheça os marcos: de Pong e o Atari aos consoles atuais e o impacto cultural dos jogos.</p>
-      </article>
-
-      <aside style="width:320px;min-width:240px;background:var(--glass);padding:14px;border-radius:12px">
-        <h3 style="margin-top:0">Personagem em destaque</h3>
-        <p style="color:var(--muted)">Perfil rápido, curiosidades e jogos principais.</p>
-      </aside>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div>© 2025 Mundo dos Videogames | Feito por fãs para fãs</div>
-  <div style="display:flex;gap:12px;align-items:center">
-    <a href="#" aria-label="Instagram">IG</a>
-    <a href="#" aria-label="YouTube">YT</a>
-    <a href="#" aria-label="TikTok">TT</a>
-  </div>
-</footer>
-
-  </div>  <script>
-    // slider thumbs -> simple image swap
-    (function(){
-      const thumbs = document.querySelectorAll('.thumb');
-      const heroImage = document.getElementById('heroImage');
-
-      // Make the hero image clickable to open larger view
-      if(heroImage){
-        heroImage.style.cursor = 'pointer';
-        heroImage.addEventListener('click', ()=>{
-          window.open(heroImage.src, '_blank');
-        });
-      }
-
-      thumbs.forEach(t=>{
-        t.addEventListener('click', ()=>{
-          const src = t.getAttribute('data-src');
-          if(src) heroImage.src = src;
-        });
-      });
-
-      // Small progressive enhancement: if thumbs images missing, hide the row
-      const thumbsRow = document.getElementById('thumbs');
-      if(thumbsRow && thumbsRow.querySelectorAll('.thumb').length===0) thumbsRow.style.display='none';
-
-      // Smooth entry animation
-      window.addEventListener('load', ()=>{
-        document.querySelector('.hero-left').style.transform='translateY(0)';
-      });
-    })();
-  </script></body>
+  <script src="script.js"></script>
+</body>
 </html>

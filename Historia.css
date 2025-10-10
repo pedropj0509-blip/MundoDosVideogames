@@ -1,0 +1,77 @@
+/* === Paleta Retrô / Clássica (Anos 80–90) === */
+:root {
+  --fundo: #0B132B;        /* Azul escuro */
+  --vermelho: #FF003C;     /* Destaque 1 */
+  --amarelo: #FFD700;      /* Destaque 2 */
+  --texto: #FFFFFF;        /* Texto principal */
+  --azul-claro: #00BFFF;   /* Links / botões */
+}
+
+body {
+  background-color: var(--fundo);
+  color: var(--texto);
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: var(--amarelo);
+  text-shadow: 2px 2px var(--vermelho);
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  border-left: 4px solid var(--vermelho);
+  padding-left: 20px;
+}
+
+.era {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.era::before {
+  content: "★";
+  color: var(--amarelo);
+  position: absolute;
+  left: -32px;
+  top: 0;
+  font-size: 20px;
+}
+
+.era h2 {
+  color: var(--vermelho);
+  margin-bottom: 10px;
+}
+
+.era p {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+a, button {
+  background-color: var(--azul-claro);
+  color: var(--fundo);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  transition: 0.3s;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+a:hover, button:hover {
+  background-color: var(--vermelho);
+  color: var(--texto);
+}

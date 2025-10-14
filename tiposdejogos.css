@@ -1,0 +1,49 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: #333;
+}
+.container {
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+.genero {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+.genero:last-child {
+  border-bottom: none;
+}
+.icone {
+  width: 64px;
+  height: 64px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.descricao {
+  flex: 1;
+}
+.nome-genero {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #222;
+}
+.explicacao {
+  color: #555;
+  line-height: 1.4;
+}
+

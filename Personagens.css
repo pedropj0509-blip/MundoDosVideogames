@@ -30,12 +30,13 @@ header {
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.06);
+  background-color: blue;
 }
 
 .card img {
-  width: 100%;
-  height: 200px;
+  width: 105%;
+  height: 500px;
   object-fit: cover;
 }
 

@@ -1,0 +1,49 @@
+<!-- Quiz.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Quiz — Consoles & Jogos</title>
+<link rel="stylesheet" href="Quiz.css" />
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="card header-card">
+<div class="logo">QZ</div>
+<div>
+<h1>Quiz — Consoles, Personagens e Jogos</h1>
+<div class="subtitle">Responda e veja o feedback: <strong>Acertou</strong> / <strong>Errou</strong></div>
+</div>
+</div>
+</header>
+
+
+<main class="card" id="quiz">
+<div class="meta">
+<div class="score">Pergunta <span id="qIndex">1</span> de <span id="qTotal">1</span></div>
+<div class="score">Pontuação: <span id="score">0</span></div>
+</div>
+
+
+<div class="question" id="question">Carregando...</div>
+<div class="options" id="options"></div>
+<div id="feedbackArea"></div>
+
+
+<div class="controls">
+<button class="btn ghost" id="prev">Anterior</button>
+<button class="btn ghost" id="next">Próxima</button>
+<button class="btn primary" id="restart">Reiniciar</button>
+</div>
+
+
+<footer>
+Dica: as perguntas cobrem consoles, personagens e títulos clássicos e modernos.
+</footer>
+</main>
+</div>
+<script src="Quiz.js"></script>
+</body>
+</html>

@@ -1,97 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-body {
+:root {
+  /* 🎨 Paleta retrô / clássica (anos 80–90) */
+  --bg1: #001F3F;           /* Azul escuro (fundo principal) */
+  --bg2: #001B33;           /* Azul complementar */
+  --accent1: #FF4136;       /* Vermelho destaque */
+  --accent2: #FFDC00;       /* Amarelo destaque */
+  --link: #7FDBFF;          /* Azul claro (links e botões) */
+  --text: #FFFFFF;          /* Branco (texto principal) */
+  --muted: rgba(255, 255, 255, 0.7);
+  --glass: rgba(255, 255, 255, 0.05);
   font-family: 'Press Start 2P', monospace;
-  background-color: #001F3F; /* Azul escuro retrô */
-  color: #FFFFFF; /* Texto branco */
+}
+
+/* Corpo */
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg1), var(--bg2));
+  color: var(--text);
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+  overflow-x: hidden;
+}
+
+/* Layout base */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 28px;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent1);
+  padding: 20px 40px;
+  border-bottom: 4px solid var(--accent2);
+  box-shadow: 0 0 20px var(--accent1);
+  color: var(--accent2);
+  text-shadow: 2px 2px 0 #000;
+}
+
+/* Logo + ícone */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.badge {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent1), var(--accent2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px var(--accent2);
+}
+
+/* Navegação */
+nav ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* Cabeçalho com visual fliperama */
-header {
-  background-color: #FF4136; /* Vermelho destaque */
-  text-align: center;
-  padding: 30px 10px;
-  color: #FFDC00; /* Amarelo ouro */
-  text-shadow: 2px 2px 0 #000;
-  border-bottom: 4px solid #FFDC00;
-  box-shadow: 0 0 15px #FF4136;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  gap: 25px;
-}
-
-/* Cartões com neon sutil */
-.card {
-  background-color: #0b1220; /* Fundo roxo-azulado */
-  border: 3px solid #7FDBFF; /* Azul claro neon */
-  border-radius: 15px;
-  width: 80%;
-  max-width: 700px;
-  padding: 20px 30px;
-  box-shadow: 0 0 12px #7FDBFF;
-  line-height: 1.6;
-  transition: transform 0.2s ease-in-out;
-}
-
-.card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 20px #7FDBFF;
-}
-
-/* Títulos dourados */
-h2 {
-  color: #FFDC00;
-  border-bottom: 2px solid #FFDC00;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-}
-
-/* Links com azul neon */
-a {
-  color: #7FDBFF;
+nav a {
+  color: var(--link);
   text-decoration: none;
   transition: 0.3s;
+  font-size: 0.85rem;
 }
 
-a:hover {
-  color: #FFDC00;
-  text-shadow: 0 0 8px #FFDC00;
-}
-
-/* Listas */
-ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
-
-/* Rodapé com brilho */
-footer {
-  background-color: #FF4136; /* Vermelho retrô */
-  color: #FFDC00;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.8rem;
-  border-top: 3px solid #FFDC00;
-  box-shadow: 0 0 10px #FF4136;
-}
-
-/* Destaques opcionais */
-.destaque-vermelho {
-  border-color: #FF4136;
-}
-
-.destaque-amarelo {
-  border-color: #FFDC00;
-}
-
-.agradecimento {
-  text-align: center;
-  font-size: 0.9rem;
+nav a:hover {
+  color: var(--accent2);
+  text-shadow: 0 0 8px var(--accent2), 0 0 12px var(--accent1);
 }

@@ -2,19 +2,21 @@
 
 body {
   font-family: 'Press Start 2P', monospace;
-  background-color: #0b1d51; /* Azul escuro */
-  color: white;
+  background-color: #001F3F; /* Azul escuro retrô */
+  color: #FFFFFF; /* Texto branco */
   margin: 0;
   padding: 0;
 }
 
+/* Cabeçalho com visual fliperama */
 header {
-  background-color: #c1121f; /* Vermelho destaque */
+  background-color: #FF4136; /* Vermelho destaque */
   text-align: center;
   padding: 30px 10px;
-  color: yellow;
+  color: #FFDC00; /* Amarelo ouro */
   text-shadow: 2px 2px 0 #000;
-  border-bottom: 4px solid #ffcc00;
+  border-bottom: 4px solid #FFDC00;
+  box-shadow: 0 0 15px #FF4136;
 }
 
 .container {
@@ -25,58 +27,68 @@ header {
   gap: 25px;
 }
 
+/* Cartões com neon sutil */
 .card {
-  background-color: #1b2845;
-  border: 3px solid #00aaff;
+  background-color: #0b1220; /* Fundo roxo-azulado */
+  border: 3px solid #7FDBFF; /* Azul claro neon */
   border-radius: 15px;
   width: 80%;
   max-width: 700px;
   padding: 20px 30px;
-  box-shadow: 0 0 10px #00aaff;
+  box-shadow: 0 0 12px #7FDBFF;
   line-height: 1.6;
   transition: transform 0.2s ease-in-out;
 }
 
 .card:hover {
   transform: scale(1.03);
+  box-shadow: 0 0 20px #7FDBFF;
 }
 
+/* Títulos dourados */
 h2 {
-  color: #ffcc00;
-  border-bottom: 2px solid #ffcc00;
+  color: #FFDC00;
+  border-bottom: 2px solid #FFDC00;
   padding-bottom: 10px;
   margin-bottom: 15px;
 }
 
+/* Links com azul neon */
 a {
-  color: #00aaff;
+  color: #7FDBFF;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #FFDC00;
+  text-shadow: 0 0 8px #FFDC00;
 }
 
+/* Listas */
 ul {
   list-style-type: square;
   padding-left: 20px;
 }
 
+/* Rodapé com brilho */
 footer {
-  background-color: #c1121f;
-  color: yellow;
+  background-color: #FF4136; /* Vermelho retrô */
+  color: #FFDC00;
   text-align: center;
   padding: 15px;
   font-size: 0.8rem;
-  border-top: 3px solid #ffcc00;
+  border-top: 3px solid #FFDC00;
+  box-shadow: 0 0 10px #FF4136;
 }
 
+/* Destaques opcionais */
 .destaque-vermelho {
-  border-color: #ff0000;
+  border-color: #FF4136;
 }
 
 .destaque-amarelo {
-  border-color: #ffcc00;
+  border-color: #FFDC00;
 }
 
 .agradecimento {

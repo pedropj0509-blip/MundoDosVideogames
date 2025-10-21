@@ -10,7 +10,7 @@
   --text: #FFFFFF;          /* Texto principal */
   --muted: rgba(255, 255, 255, 0.75);
   --glass: rgba(0, 0, 0, 0.3);
-  font-family: 'Press Start 2P', monospace;
+  font-family:  Arial, sans-serif;
 }
 
 /* Fundo geral */

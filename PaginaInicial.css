@@ -8,7 +8,7 @@
   --text: #FFFFFF;          /* Branco (texto principal) */
   --muted: rgba(255, 255, 255, 0.7);
   --glass: rgba(255, 255, 255, 0.05);
-  font-family: "Press Start 2P", Inter, sans-serif;
+  font-family:  Inter, sans-serif;
 }
 
 body {

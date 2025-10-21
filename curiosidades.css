@@ -1,69 +1,105 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  /* 🎨 Paleta retrô/clássica (anos 80–90) */
+  --bg1: #001F3F;           /* Azul escuro principal */
+  --bg2: #001B33;           /* Fundo complementar */
+  --accent1: #FF4136;       /* Vermelho destaque */
+  --accent2: #FFDC00;       /* Amarelo ouro */
+  --link: #7FDBFF;          /* Azul neon claro */
+  --text: #FFFFFF;          /* Texto principal */
+  --muted: rgba(255, 255, 255, 0.75);
+  --glass: rgba(0, 0, 0, 0.3);
   font-family: 'Press Start 2P', monospace;
-  background-color: #0b1d51; /* Azul escuro */
-  color: white;
+}
+
+/* Fundo geral */
+body {
   margin: 0;
-  padding: 0;
+  background: linear-gradient(180deg, var(--bg1) 60%, var(--bg2));
+  color: var(--text);
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
 }
 
+/* Cabeçalho */
 header {
-  background-color: #c1121f; /* Vermelho destaque */
+  background-color: var(--accent1);
+  color: var(--accent2);
   text-align: center;
-  padding: 30px 10px;
-  color: yellow;
+  padding: 32px 16px;
   text-shadow: 2px 2px 0 #000;
-  border-bottom: 4px solid #ffcc00;
+  border-bottom: 4px solid var(--accent2);
+  box-shadow: 0 0 20px var(--accent1);
+  font-size: 1rem;
 }
 
+/* Container */
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
-  gap: 20px;
+  gap: 24px;
+  padding: 40px 20px;
+  background-color: var(--bg1);
 }
 
+/* Cards */
 .card {
-  background-color: #1b2845;
-  border: 3px solid #00aaff;
-  border-radius: 15px;
-  width: 300px;
+  background-color: var(--bg2);
+  border: 3px solid var(--accent2);
+  border-radius: 16px;
+  width: 260px;
   padding: 20px;
-  box-shadow: 0 0 10px #00aaff;
-  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 12px var(--accent2);
+  color: var(--text);
+  transition: all 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 22px var(--link);
+  border-color: var(--link);
 }
 
-h2 {
-  color: #ffcc00;
-  border-bottom: 2px solid #ffcc00;
+/* Títulos dos cards */
+.card h3 {
+  color: var(--accent2);
+  border-bottom: 2px solid var(--accent2);
   padding-bottom: 10px;
+  margin-bottom: 16px;
+  text-shadow: 0 0 8px var(--accent2);
+  font-size: 0.9rem;
 }
 
-ul {
+/* Textos dentro dos cards */
+.card ul {
   list-style-type: square;
   padding-left: 20px;
+  line-height: 1.6;
+  font-size: 0.7rem;
 }
 
-footer {
-  background-color: #c1121f;
-  color: yellow;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.8rem;
-  border-top: 3px solid #ffcc00;
+/* Ícones coloridos */
+.card.vermelho {
+  border-color: var(--accent1);
+  box-shadow: 0 0 12px var(--accent1);
+}
+.card.vermelho h3 {
+  color: var(--accent1);
+  border-bottom-color: var(--accent1);
 }
 
-.destaque-vermelho {
-  border-color: #ff0000;
+.card.amarelo {
+  border-color: var(--accent2);
 }
 
-.destaque-amarelo {
-  border-color: #ffcc00;
+.card.azul {
+  border-color: var(--link);
+  box-shadow: 0 0 12px var(--link);
 }
 
-/* Efeito retrô pixelado */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Linha neon separadora */
+.neon-line {
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--link));
+  box-shadow: 0 0 12

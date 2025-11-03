@@ -163,9 +163,9 @@ footer {
   margin-top: 40px;
   padding: 22px 0;
   color: var(--muted);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  
+ 
+  text-align: center;
   border-top: 2px solid var(--accent1);
 }
 
@@ -174,11 +174,13 @@ footer a {
   text-decoration: none;
   margin-left: 10px;
   transition: 0.3s;
+  
 }
 
 footer a:hover {
   color: var(--accent2);
   text-shadow: 0 0 8px var(--accent2);
+  
 }
 
 /* Responsividade */

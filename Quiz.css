@@ -174,6 +174,7 @@ footer {
   --accent: #10b981;
   --danger: #ef4444;
   --muted: #94a3b8;
+  --dri: green;
 }
 
 * {
@@ -245,7 +246,7 @@ header h1 {
 }
 
 .question {
-  font-size: 18px;
+  font-size: 35px;
   margin: 8px 0 18px;
 }
 
@@ -256,9 +257,9 @@ header h1 {
 }
 
 .opt {
-  padding: 12px;
+  padding: 70px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.02);
+  background: gray;
   border: 1px solid rgba(255, 255, 255, 0.03);
   cursor: pointer;
   transition: transform 0.12s, box-shadow 0.12s;

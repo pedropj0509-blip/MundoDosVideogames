@@ -76,7 +76,7 @@ header h1 {
 }
 
 .question {
-  font-size: 24px;
+  font-size: 35px;
   margin: 8px 0 18px;
 }
 
@@ -87,7 +87,7 @@ header h1 {
 }
 
 .opt {
-  padding: 16px;
+  padding: 56px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.03);

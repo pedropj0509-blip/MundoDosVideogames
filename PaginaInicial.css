@@ -190,3 +190,11 @@ footer a:hover {
     font-size: 42px;
   }
 }
+
+Logo2 {
+ 
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+
+}

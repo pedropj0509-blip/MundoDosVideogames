@@ -35,6 +35,7 @@ header {
   display: flex;
   align-items: center;
   gap: 14px;
+  border-radius: 30px
 }
 
 /* Ícone neon */

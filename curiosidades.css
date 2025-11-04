@@ -49,7 +49,7 @@ header {
   border: 3px solid var(--accent2);
   border-radius: 16px;
   width: 260px;
-  padding: 20px;
+  padding: 65px;
   box-shadow: 0 0 12px var(--accent2);
   color: var(--text);
   transition: all 0.3s ease;
@@ -103,3 +103,22 @@ header {
   height: 3px;
   background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--link));
   box-shadow: 0 0 12
+}
+
+footer {
+  text-align: center
+}
+ 
+.botao-voltar {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+  .botao-voltar:hover {
+    background-color: #cc0000;
+  }

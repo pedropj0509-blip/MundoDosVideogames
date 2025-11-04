@@ -104,3 +104,18 @@ a:hover {
   transform: scale(1.1);
   box-shadow: 0 0 25px #ff00ff;
 }
+
+
+  .botao-voltar {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+  .botao-voltar:hover {
+    background-color: #cc0000;
+  }

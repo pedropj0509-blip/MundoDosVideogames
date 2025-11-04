@@ -57,3 +57,18 @@ header {
   font-size: 0.8em;
   margin-top: 10px;
 }
+
+
+  .botao-voltar {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+  .botao-voltar:hover {
+    background-color: #0300cc;
+  }

@@ -168,3 +168,17 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+  .botao-voltar {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+  .botao-voltar:hover {
+    background-color: #cc0000;
+  }

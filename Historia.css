@@ -1,121 +1,170 @@
+/* Fundo e estilo base */
 body {
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at center, #111, #000);
-  color: #00ffcc;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at center, #060b10, #000);
+  color: #e0f7fa;
+  overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header {
   text-align: center;
-  padding: 60px 20px;
-  min-height: 100vh;
+  padding: 40px 20px 10px;
 }
 
 h1 {
-  font-size: 24px;
-  color: #ff00ff;
-  text-shadow: 2px 2px 0 #000;
-  margin-bottom: 80px;
+  color: #00eaff;
+  font-size: 2rem;
+  text-shadow: 0 0 20px #00eaffaa;
+  margin-bottom: 30px;
 }
 
+/* Botão voltar */
+.botao-voltar {
+  background: linear-gradient(90deg, #ff0066, #ffcc00);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px #ff006655;
+  transition: 0.3s;
+}
+
+.botao-voltar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ffcc00aa;
+}
+
+/* Linha do tempo */
 .timeline {
   position: relative;
+  width: 90%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 80px auto;
   padding: 40px 0;
 }
 
-.timeline::before {
-  content: "";
+.linha {
   position: absolute;
-  left: 50%;
   top: 0;
-  bottom: 0;
+  left: 50%;
   width: 4px;
-  background: linear-gradient(to bottom, #ff00ff, #00ffff);
+  height: 100%;
+  background: linear-gradient(to bottom, #00eaff, #9c27b0);
   transform: translateX(-50%);
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
+/* Cada Era */
 .era {
   position: relative;
+  width: 50%;
+  padding: 30px 40px;
+  margin: 40px 0;
   background: rgba(255, 255, 255, 0.05);
-  border: 2px solid #00ffcc;
   border-radius: 20px;
-  padding: 25px;
-  width: 40%;
-  box-shadow: 0 0 20px #00ffff55;
-  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #00eaff33;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px #00eaff33;
+  transition: 0.3s ease;
 }
 
-.era:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px #00ffffaa;
+/* Animação de entrada */
+.era {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: aparecer 0.8s forwards;
 }
 
-/* Posicionamento alternado */
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Alterna lados */
 .era:nth-child(odd) {
   left: 0;
 }
 
 .era:nth-child(even) {
-  left: 60%;
+  left: 50%;
 }
 
-/* Ligação visual (ponta da caixa até a linha central) */
-.era::after {
-  content: "";
+/* Ícones */
+.icone {
   position: absolute;
-  top: 25px;
-  width: 20px;
-  height: 4px;
-  background: #00ffff;
+  top: 20px;
+  right: -40px;
+  background: #00eaff;
+  color: #000;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #00eaffaa;
 }
 
-.era:nth-child(odd)::after {
-  right: -20px;
+.era:nth-child(even) .icone {
+  left: -40px;
+  right: auto;
 }
 
-.era:nth-child(even)::after {
-  left: -20px;
+/* Conteúdo */
+.conteudo h2 {
+  color: #ffea00;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
-h2 {
-  color: #ffff00;
-  font-size: 13px;
-  margin-bottom: 15px;
+.conteudo p {
+  font-size: 0.95rem;
+  color: #c8f6ff;
+  line-height: 1.6;
 }
 
-p {
-  font-size: 10px;
-  line-height: 1.8;
+/* Hover */
+.era:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #00eaff88;
 }
 
-a {
-  display: inline-block;
-  margin-top: 80px;
-  padding: 12px 25px;
-  color: #fff;
-  background: linear-gradient(90deg, #ff00ff, #00ffff);
-  border-radius: 10px;
+/* Botão explorar */
+footer {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.botao-explorar {
   text-decoration: none;
-  font-size: 12px;
-  box-shadow: 0 0 20px #00ffffaa;
+  color: #fff;
+  background: linear-gradient(90deg, #00eaff, #9c27b0);
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 0 20px #00eaff77;
   transition: 0.3s;
 }
 
-a:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px #ff00ff;
+.botao-explorar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #9c27b0aa;
 }
 
-
-  .botao-voltar {
-    display: inline-block;
-    background-color: #ff4d4d;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
+/* Responsividade */
+@media (max-width: 768px) {
+  .linha {
+    left: 20px;
   }
 
-  .botao-voltar:hover {
-    background-color: #cc0000;
+  .era, .era:nth-child(even) {
+    width: calc(100% - 60px);
+    left: 40px !important;
   }
+
+  .icone {
+    left: -35px !important;
+  }
+}

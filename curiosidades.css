@@ -11,6 +11,7 @@
   --muted: rgba(255, 255, 255, 0.75);
   --glass: rgba(0, 0, 0, 0.3);
   font-family:  Arial, sans-serif;
+  font-size: 20px;
 }
 
 /* Fundo geral */

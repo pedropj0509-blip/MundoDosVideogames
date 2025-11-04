@@ -72,3 +72,35 @@ header {
   .botao-voltar:hover {
     background-color: #0300cc;
   }
+
+  .card:hover {
+  transform: scale(1.06);
+  color: white; /* texto fica visível em cores escuras */
+}
+
+/* Cores individuais */
+.card.Mario:hover {
+  background-color: #ff0000; /* vermelho */
+}
+
+.card.Sonic:hover {
+  background-color: #0078ff; /* azul */
+}
+
+.card.Link:hover {
+  background-color: #00b140; /* verde */
+}
+
+.card.Lara:hover {
+  background-color: #b5651d; /* marrom */
+}
+
+.card.Pika:hover {
+  background-color: #ffeb3b; /* amarelo */
+  color: black; /* texto escuro pro contraste */
+}
+
+/* Deixa a tag com cor adaptável também */
+.card:hover .tag {
+  background-color: rgba(0,0,0,0.2);
+}

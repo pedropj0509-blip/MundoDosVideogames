@@ -1,21 +1,22 @@
 :root {
-  /* 🎨 Paleta retrô/clássica (anos 80–90) */
-  --bg1: #001F3F;           /* Azul escuro (fundo) */
-  --bg2: #001B33;           /* Tom complementar do fundo */
-  --accent1: #FF4136;       /* Vermelho destaque */
-  --accent2: #FFDC00;       /* Amarelo destaque */
-  --link: #7FDBFF;          /* Azul claro (botões/links) */
-  --text: #FFFFFF;          /* Branco (texto principal) */
-  --muted: rgba(255, 255, 255, 0.7);
+  /* 🌌 Paleta Neon Futurista */
+  --bg1: #060b10;
+  --bg2: #000;
+  --accent1: #00eaff;      /* Azul neon */
+  --accent2: #9c27b0;      /* Roxo neon */
+  --link: #ff00ff;         /* Magenta claro */
+  --text: #e0f7fa;
+  --muted: #c8f6ff;
   --glass: rgba(255, 255, 255, 0.05);
-  font-family:  Inter, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, var(--bg1), var(--bg2));
+  background: radial-gradient(circle at center, var(--bg1), var(--bg2));
   color: var(--text);
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.15);
+  text-shadow: 0 0 4px rgba(0, 255, 255, 0.2);
+  overflow-x: hidden;
 }
 
 /* Container e layout */
@@ -25,6 +26,7 @@ body {
   padding: 28px;
 }
 
+/* Cabeçalho */
 header {
   display: flex;
   justify-content: space-between;
@@ -35,7 +37,7 @@ header {
   display: flex;
   align-items: center;
   gap: 14px;
-  border-radius: 30px
+  border-radius: 30px;
 }
 
 /* Ícone neon */
@@ -47,7 +49,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 10px var(--accent2);
+  box-shadow: 0 0 15px var(--accent1), 0 0 30px var(--accent2);
 }
 
 /* Navegação */
@@ -58,7 +60,7 @@ nav ul {
 }
 
 nav a {
-  color: var(--link);
+  color: var(--accent1);
   text-decoration: none;
   font-weight: 700;
   transition: 0.3s;
@@ -66,7 +68,7 @@ nav a {
 
 nav a:hover {
   color: var(--accent2);
-  text-shadow: 0 0 8px var(--accent2);
+  text-shadow: 0 0 10px var(--accent2);
 }
 
 /* Hero section */
@@ -82,8 +84,8 @@ nav a:hover {
   font-size: 64px;
   margin: 0 0 18px;
   font-weight: 800;
-  color: var(--accent2);
-  text-shadow: 0 0 10px var(--accent2), 0 0 20px var(--accent1);
+  color: var(--accent1);
+  text-shadow: 0 0 15px var(--accent1), 0 0 30px var(--accent2);
 }
 
 .hero-sub {
@@ -92,23 +94,26 @@ nav a:hover {
   margin-bottom: 28px;
 }
 
+/* Botão neon */
 .cta {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  border: 2px solid var(--link);
+  border: 2px solid var(--accent1);
   padding: 12px 20px;
   border-radius: 12px;
   color: var(--text);
   font-weight: 700;
-  background: rgba(127, 219, 255, 0.08);
+  background: rgba(0, 234, 255, 0.08);
+  box-shadow: 0 0 12px var(--accent1);
   transition: 0.2s;
 }
 
 .cta:hover {
-  background: var(--link);
+  background: var(--accent1);
   color: #000;
   transform: translateY(-3px);
+  box-shadow: 0 0 25px var(--accent2);
 }
 
 .pill {
@@ -118,12 +123,14 @@ nav a:hover {
   font-size: 14px;
   color: #000;
   font-weight: 700;
+  box-shadow: 0 0 10px var(--accent1);
 }
 
+/* Imagem neon */
 .hero-visual img {
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 25px var(--accent1);
 }
 
 /* Cards */
@@ -138,28 +145,37 @@ nav a:hover {
   padding: 16px;
   border-radius: 12px;
   flex: 1;
-  border: 1px solid var(--accent1);
-  box-shadow: 0 0 8px rgba(255, 65, 54, 0.4);
+  border: 1px solid var(--accent2);
+  box-shadow: 0 0 12px var(--accent2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--accent1);
 }
 
 .card h3 {
-  color: var(--accent2);
+  color: var(--accent1);
+  text-shadow: 0 0 6px var(--accent2);
 }
 
-/* Neon line */
+/* Linha Neon */
 .neon-line {
   height: 4px;
-  background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--link));
+  background: linear-gradient(90deg, var(--accent1), var(--accent2));
   border-radius: 2px;
   margin: 40px 0;
-  box-shadow: 0 0 10px var(--link);
+  box-shadow: 0 0 15px var(--accent1), 0 0 30px var(--accent2);
 }
 
 /* Conteúdo */
 .content-section h2 {
   color: var(--accent1);
+  text-shadow: 0 0 10px var(--accent2);
 }
 
+/* Rodapé */
 footer {
   margin-top: 40px;
   padding: 22px 0;
@@ -171,7 +187,7 @@ footer {
 }
 
 footer a {
-  color: var(--link);
+  color: var(--accent1);
   text-decoration: none;
   margin-left: 10px;
   transition: 0.3s;
@@ -179,7 +195,7 @@ footer a {
 
 footer a:hover {
   color: var(--accent2);
-  text-shadow: 0 0 8px var(--accent2);
+  text-shadow: 0 0 10px var(--accent2);
 }
 
 /* Responsividade */
@@ -187,11 +203,12 @@ footer a:hover {
   .hero {
     grid-template-columns: 1fr;
   }
+
   .hero-title {
     font-size: 42px;
   }
 }
 
 img {
-  border-radius: 7px;
+  border-radius: 10px;
 }

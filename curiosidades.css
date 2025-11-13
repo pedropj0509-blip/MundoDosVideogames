@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-  /* 🎨 Paleta retrô/clássica (anos 80–90) */
-  --bg1: #001F3F;           /* Azul escuro principal */
-  --bg2: #001B33;           /* Fundo complementar */
-  --accent1: #FF4136;       /* Vermelho destaque */
-  --accent2: #FFDC00;       /* Amarelo ouro */
-  --link: #7FDBFF;          /* Azul neon claro */
-  --text: #FFFFFF;          /* Texto principal */
-  --muted: rgba(255, 255, 255, 0.75);
-  --glass: rgba(0, 0, 0, 0.3);
-  font-family:  Arial, sans-serif;
+  /* 🌌 Paleta Neon Futurista */
+  --bg1: #060b10;
+  --bg2: #000000;
+  --accent1: #00eaff;      /* Azul neon */
+  --accent2: #9c27b0;      /* Roxo neon */
+  --link: #ff00ff;         /* Magenta neon */
+  --text: #e0f7fa;         /* Azul clarinho */
+  --muted: #c8f6ff;        /* Azul suave */
+  --glass: rgba(255, 255, 255, 0.05);
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
 }
 
@@ -103,23 +103,23 @@ header {
 .neon-line {
   height: 3px;
   background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--link));
-  box-shadow: 0 0 12
+  box-shadow: 0 0 12px var(--link);
 }
 
 footer {
-  text-align: center
+  text-align: center;
 }
  
 .botao-voltar {
-    display: inline-block;
-    background-color: #ff4d4d;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-  }
+  display: inline-block;
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
 
-  .botao-voltar:hover {
-    background-color: #cc0000;
-  }
+.botao-voltar:hover {
+  background-color: #cc0000;
+}

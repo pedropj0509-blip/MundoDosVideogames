@@ -124,5 +124,7 @@ footer {
 }
 
 .botao-voltar:hover {
-  background-color: #cc0000;
-}
+    background-color: #cc0000;
+    transform: scale(1.08);
+    box-shadow: 0 0 30px #ffcc00aa;
+  }

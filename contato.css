@@ -1,21 +1,21 @@
 :root {
-  /* 🎨 Paleta retrô/clássica (anos 80–90) */
-  --bg1: #001F3F;           /* Azul escuro (fundo) */
-  --bg2: #001B33;           /* Tom complementar do fundo */
-  --accent1: #FF4136;       /* Vermelho destaque */
-  --accent2: #FFDC00;       /* Amarelo destaque */
-  --link: #7FDBFF;          /* Azul claro (botões/links) */
-  --text: #FFFFFF;          /* Branco (texto principal) */
-  --muted: rgba(255, 255, 255, 0.7);
+  /* 🌌 Paleta Neon Futurista */
+  --bg1: #060b10;
+  --bg2: #000;
+  --accent1: #00eaff;     /* Azul neon */
+  --accent2: #9c27b0;     /* Roxo neon */
+  --link: #ff00ff;        /* Magenta neon */
+  --text: #e0f7fa;        /* Azul muito claro */
+  --muted: #c8f6ff;       /* Suave */
   --glass: rgba(255, 255, 255, 0.05);
-  font-family: "Press Start 2P", Inter, sans-serif;
+  font-family: "Poppins", Inter, sans-serif;
 }
 
 body {
   margin: 0;
   background: linear-gradient(180deg, var(--bg1), var(--bg2));
   color: var(--text);
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.15);
+  text-shadow: 0 0 4px rgba(224, 247, 250, 0.15);
 }
 
 /* Container e layout */
@@ -46,7 +46,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 10px var(--accent2);
+  box-shadow: 0 0 12px var(--accent2), 0 0 18px var(--accent1);
 }
 
 /* Navegação */
@@ -100,7 +100,7 @@ nav a:hover {
   border-radius: 12px;
   color: var(--text);
   font-weight: 700;
-  background: rgba(127, 219, 255, 0.08);
+  background: rgba(255, 0, 255, 0.08);
   transition: 0.2s;
 }
 
@@ -122,7 +122,7 @@ nav a:hover {
 .hero-visual img {
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.15);
 }
 
 /* Cards */
@@ -138,7 +138,7 @@ nav a:hover {
   border-radius: 12px;
   flex: 1;
   border: 1px solid var(--accent1);
-  box-shadow: 0 0 8px rgba(255, 65, 54, 0.4);
+  box-shadow: 0 0 12px rgba(0, 234, 255, 0.35);
 }
 
 .card h3 {
@@ -151,7 +151,7 @@ nav a:hover {
   background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--link));
   border-radius: 2px;
   margin: 40px 0;
-  box-shadow: 0 0 10px var(--link);
+  box-shadow: 0 0 12px var(--link);
 }
 
 /* Conteúdo */
@@ -163,8 +163,6 @@ footer {
   margin-top: 40px;
   padding: 22px 0;
   color: var(--muted);
-  
- 
   text-align: center;
   border-top: 2px solid var(--accent1);
 }
@@ -174,13 +172,11 @@ footer a {
   text-decoration: none;
   margin-left: 10px;
   transition: 0.3s;
-  
 }
 
 footer a:hover {
   color: var(--accent2);
   text-shadow: 0 0 8px var(--accent2);
-  
 }
 
 /* Responsividade */
@@ -193,18 +189,17 @@ footer a:hover {
   }
 }
 
+.botao-voltar {
+  display: inline-block;
+  background-color: var(--accent1);
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
 
-  .botao-voltar {
-    display: inline-block;
-    background-color: #ff4d4d;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-  }
-
-  .botao-voltar:hover {
-    background-color: #cc0000;
-  }
-
+.botao-voltar:hover {
+  background-color: var(--accent2);
+}

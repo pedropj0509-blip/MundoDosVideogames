@@ -33,7 +33,7 @@ h1 {
 }
 
 .botao-voltar:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
   box-shadow: 0 0 25px #ffcc00aa;
 }
 
@@ -168,3 +168,4 @@ footer {
     left: -35px !important;
   }
 }
+

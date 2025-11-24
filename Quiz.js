@@ -45,9 +45,22 @@ if(answered) return; answered = true;
 const correct = questions[index].correct;
 const buttons = Array.from(optionsEl.children);
 buttons.forEach((b,i)=>{ b.classList.add('disabled'); b.disabled=true; if(i===correct) b.style.boxShadow='0 6px 18px rgba(16,185,129,0.12)'; if(i===choice && i!==correct) b.style.opacity=0.85; });
-if(choice===correct){ score++; updateScore(); showFeedback(true); btn.classList.add('ok'); }
-else { showFeedback(false, questions[index].options[correct]); btn.classList.add('bad'); }
+if (choice === correct) {
+    score++;
+    updateScore();
+    showFeedback(true);
+
+    // deixa a opção correta verde
+    btn.classList.add('correct');
+} else {
+    showFeedback(false, questions[index].options[correct]);
+
+    // deixa a opção errada vermelha
+    btn.classList.add('wrong');
 }
+
+// também destacar qual era a correta
+buttons[correct].classList.add('correct')};
 function showFeedback(isCorrect, correctText){
 feedbackArea.innerHTML=''; const f=document.createElement('div');
 f.className='feedback '+(isCorrect?'ok':'bad');

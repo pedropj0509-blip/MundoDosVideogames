@@ -95,6 +95,7 @@ header h1 {
   border: 1px solid rgba(255, 255, 255, 0.03);
   cursor: pointer;
   transition: transform 0.12s, box-shadow 0.12s, background 0.12s;
+  color: #ffffffff
 }
 
 .opt:hover {
@@ -187,3 +188,19 @@ footer {
     transform: scale(1.08);
     box-shadow: 0 0 30px #ffcc00aa;
   }
+
+/* Deixa a opção correta verde */
+.opt.correct {
+  background: rgba(16, 185, 129, 0.18);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #10b981; /* verde */
+  font-weight: 600;
+}
+
+.opt.wrong {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: #ef4444;
+  font-weight: 600;
+}
+

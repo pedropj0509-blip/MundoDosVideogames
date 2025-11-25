@@ -5,6 +5,7 @@ const questions = [
 { q: 'Em que jogo você assume o papel de Master Chief?', options: ['Halo', 'Gears of War', 'Doom', 'Metroid'], correct: 0 },
 { q: 'Qual console da Sony foi o primeiro a usar discos ópticos?', options: ['PlayStation (PS1)', 'PlayStation 2', 'PSP', 'PlayStation 3'], correct: 0 },
 { q: 'Qual jogo popularizou o battle royale em 2017-2018?', options: ['Fortnite', 'Tetris 99', 'PUBG', 'Apex Legends'], correct: 2 }
+
 ];
 
 const qTotal = document.getElementById('qTotal');

@@ -1,12 +1,24 @@
 // Quiz.js
 const questions = [
-{ q: 'Qual console foi lançado pela Nintendo em 1985 e popularizou jogos em cartucho no ocidente?', options: ['PlayStation', 'Nintendo Entertainment System (NES)', 'Sega Genesis', 'Atari 2600'], correct: 1 },
-{ q: 'Qual personagem é o mascote da Sega e famoso por sua velocidade?', options: ['Mario', 'Sonic', 'Link', 'Pikachu'], correct: 1 },
-{ q: 'Em que jogo você assume o papel de Master Chief?', options: ['Halo', 'Gears of War', 'Doom', 'Metroid'], correct: 0 },
-{ q: 'Qual console da Sony foi o primeiro a usar discos ópticos?', options: ['PlayStation (PS1)', 'PlayStation 2', 'PSP', 'PlayStation 3'], correct: 0 },
-{ q: 'Qual jogo popularizou o battle royale em 2017-2018?', options: ['Fortnite', 'Tetris 99', 'PUBG', 'Apex Legends'], correct: 2 }
+  { q: 'Qual console foi lançado pela Nintendo em 1985 e popularizou jogos em cartucho no ocidente?', options: ['PlayStation', 'Nintendo Entertainment System (NES)', 'Sega Genesis', 'Atari 2600'], correct: 1 },
+  { q: 'Qual personagem é o mascote da Sega e famoso por sua velocidade?', options: ['Mario', 'Sonic', 'Link', 'Pikachu'], correct: 1 },
+  { q: 'Em que jogo você assume o papel de Master Chief?', options: ['Halo', 'Gears of War', 'Doom', 'Metroid'], correct: 0 },
+  { q: 'Qual console da Sony foi o primeiro a usar discos ópticos?', options: ['PlayStation (PS1)', 'PlayStation 2', 'PSP', 'PlayStation 3'], correct: 0 },
+  { q: 'Qual jogo popularizou o battle royale em 2017-2018?', options: ['Fortnite', 'Tetris 99', 'PUBG', 'Apex Legends'], correct: 2 },
 
+  // 🔥 Novas questões
+  { q: 'Qual empresa criou o personagem Mario?', options: ['Sega', 'Nintendo', 'Capcom', 'Konami'], correct: 1 },
+  { q: 'Qual destes jogos é exclusivo da franquia PlayStation?', options: ['Forza Horizon', 'Halo', 'God of War', 'Gears of War'], correct: 2 },
+  { q: 'Em qual console o jogo "The Legend of Zelda: Ocarina of Time" foi lançado originalmente?', options: ['SNES', 'Nintendo 64', 'GameCube', 'Wii'], correct: 1 },
+  { q: 'Qual jogo é conhecido por ser o mais vendido da história?', options: ['Minecraft', 'GTA V', 'Tetris', 'Wii Sports'], correct: 0 },
+  { q: 'A franquia "Call of Duty" pertence principalmente a qual gênero?', options: ['Corrida', 'Plataforma', 'FPS (tiro em primeira pessoa)', 'Luta'], correct: 2 },
+  { q: 'Qual console da Microsoft veio antes do Xbox One?', options: ['Xbox Series X', 'Xbox Classic', 'Xbox 360', 'Xbox Portable'], correct: 2 },
+  { q: 'Quem é o protagonista principal da série "The Witcher" nos jogos?', options: ['Geralt de Rivia', 'Ezio Auditore', 'Arthur Morgan', 'Cloud Strife'], correct: 0 },
+  { q: 'Qual desses jogos pertence à Nintendo?', options: ['Uncharted', 'Metroid', 'Halo', 'Crash Bandicoot'], correct: 1 },
+  { q: 'Qual desses é um jogo de construção e sobrevivência?', options: ['FIFA 23', 'Minecraft', 'Mortal Kombat', 'Just Dance'], correct: 1 },
+  { q: 'Qual empresa produz o console “Switch”?', options: ['Sony', 'Microsoft', 'Nintendo', 'Valve'], correct: 2 }
 ];
+
 
 const qTotal = document.getElementById('qTotal');
 const qIndex = document.getElementById('qIndex');
